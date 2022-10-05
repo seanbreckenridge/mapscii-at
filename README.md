@@ -5,7 +5,7 @@ A small CLI for [mapscii](https://github.com/rastapasta/mapscii), to let you pic
 Packaged like this just so I can install it from git like:
 
 ```
-npm install git+https://github.com/seanbreckenridge/mapscii-at
+npm install -g git+https://github.com/seanbreckenridge/mapscii-at
 ```
 
 Usage:
