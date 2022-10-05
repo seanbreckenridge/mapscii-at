@@ -1,0 +1,27 @@
+{
+  "name": "mapscii-at",
+  "version": "0.0.1",
+  "description": "a script to open mapscii at a particular center",
+  "main": "index.js",
+  "bin": {
+    "mapscii-at": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanbreckenridge/mapscii-at.git"
+  },
+  "keywords": [
+    "map",
+    "location"
+  ],
+  "author": "Sean Breckenridge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanbreckenridge/mapscii-at/issues"
+  },
+  "homepage": "https://github.com/seanbreckenridge/mapscii-at#readme",
+  "dependencies": {
+    "mapscii": "^0.3.1",
+    "yargs": "^17.6.0"
+  }
+}
