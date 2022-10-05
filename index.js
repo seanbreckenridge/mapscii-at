@@ -42,11 +42,13 @@ const parseArgs = () => {
 
   // map positional arguments onto object
   const pos = args["_"];
-  if (pos.length == 2) {
+  if (pos.length >= 2) {
     args.lat = pos[0];
     args.lon = pos[1];
   } else {
-    args = { zoom: null };
+    // default from src/Mapscii.js source code
+    args.lat = 52.51298;
+    args.lon = 13.42012;
   }
   return args;
 };
