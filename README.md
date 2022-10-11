@@ -29,4 +29,8 @@ Provide the latitude and longitude as positional arguments:
 
 `mapscii-at 40.73548026809237 -73.98723410030651 --zoom 10`
 
+Or comma-separated:
+
+`mapscii-at 40.73548026809237,-73.98723410030651 --zoom 10`
+
 All other controls work the same as mapscii

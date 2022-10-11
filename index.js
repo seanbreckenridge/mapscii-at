@@ -7,8 +7,8 @@ const runMapscii = (options) => {
 
   if (options.lat !== undefined && options.lon !== undefined) {
     map.center = {
-      lat: options.lat,
-      lon: options.lon,
+      lat: Number.parseFloat(options.lat),
+      lon: Number.parseFloat(options.lon),
     };
   }
 
@@ -45,6 +45,10 @@ const parseArgs = () => {
   if (pos.length >= 2) {
     args.lat = pos[0];
     args.lon = pos[1];
+  } else if (pos.length == 1 && pos[0].includes(",")) {
+    const parts = pos[0].split(",");
+    args.lat = parts[0];
+    args.lon = parts[1];
   } else {
     // default from src/Mapscii.js source code
     args.lat = 52.51298;
